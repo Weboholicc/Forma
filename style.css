@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Playfair+Display&display=swap');
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+
+input[type=username],
+input[type=password],
+
+select, 
+
+textarea {
+    height: 30px;
+    width: 500px;
+}
+
+button {
+    height: 40px;
+    width: 510px;
+    background-color:#f9f9f9;
+    font-size: 16px;
+    justify-content: center;
+}
+
+form>div {
+    margin: 25px 0 25px 0px;
+}
+
+form>div>label {
+
+font-size: 20px;
+}
+
+form>div>input {
+    font-size: 16px;
+   
+    outline: none;
+
+}
+
+#submitButton {
+  
+    font-weight: 800;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+i {
+  position: relative;
+  visibility: hidden;
+    
+  
+  
+}
+#sucess-check {
+  color: #2ecc71;
+   right: 40px;
+}
+#error-xmark {
+  color: #e74c3c; 
+  right: 50px;
+ 
+}
+#sucess-check-pass {
+  color: #2ecc71;
+  right: 40px;
+}
+
+#error-xmark-pass {
+  color: #e74c3c; 
+  right: 50px;
+}
+
+
+#success-username,
+#error-username,
+#success-password,
+#error-password {
+  position: relative;
+  right: 40px;
+  top: 1px;
+  visibility: hidden;
+  transition: color 0.3s ease; 
+}
+
+
+#success-username {
+  color: #2ecc71; 
+}
+
+#error-username,
+#error-password {
+  color: #e74c3c; 
+}
+
+
+
+
+
+
+

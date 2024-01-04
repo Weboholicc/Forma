@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Playfair+Display&display=swap">
+    <script src="https://kit.fontawesome.com/2b6707aad7.js" crossorigin="anonymous"></script>
+    
+    <title>Forma</title>
+
+
+</head>
+<body>
+    <form method="get" id="loginForm">
+        <div class="register">
+            <label for="username">Username:</label>
+            <input type="username" id="username" name="user" required onkeyup="validateInput('username')">
+            <small id="success-username" hidden ></small>
+            <small id="error-username" hidden></small>
+            <i class="fa-solid fa-check" id="sucess-check"></i>
+            <i class="fa-solid fa-xmark" id="error-xmark"></i>
+           
+            
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="pass" required onkeyup="validateInput('password')" >
+            <small id="success-password" hidden></small>
+            <small id="error-password" hidden></small>
+            <i class="fa-solid fa-check" id="sucess-check-pass"></i>
+            <i class="fa-solid fa-xmark" id="error-xmark-pass"></i>
+            
+        </div>
+         
+        <button type="submit" id="submitButton">Login</button><br>
+        <br>
+        
+        <small id="error-message"  hidden>Please enter valid username password</small>
+
+    </form>
+    <script src="script.js"></script>
+
+   <script src="jquery-3.6.4.min.js"></script>
+  
+</body>
+</html>
